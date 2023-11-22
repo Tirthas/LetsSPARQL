@@ -1,4 +1,4 @@
-# LetsSPARQL
+# Lets SPARQL
 SPARQL Executer
 
 # Description
