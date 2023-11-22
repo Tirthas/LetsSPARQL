@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>32439beermug_98867.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="frmMain1.cs" />
+    <Compile Remove="frmMain1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="frmMain1.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="32439beermug_98867.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LetsSparql.Dal\LetsSparql.Common.csproj" />
+    <ProjectReference Include="..\LetsSparql.Service\LetsSparql.Service.csproj" />
+  </ItemGroup>
+
+</Project>
